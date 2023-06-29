@@ -62,3 +62,166 @@
     transform: translateY(-20px);
   }
 }
+
+.animation03 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loader {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  height: 60px;
+}
+
+.loader span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  animation: bounce2 0.4s linear infinite alternate;
+}
+
+.loader span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.loader span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+@keyframes bounce2 {
+  from {
+    height: 30px;
+    background: rgb(60, 60, 116);
+  }
+
+  to {
+    height: 60px;
+    background: rgb(82, 82, 148);
+  }
+}
+
+:root {
+  --size: 60px;
+}
+
+.tiktok-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(26, 26, 26);
+}
+
+.tiktok-loader {
+  display: flex;
+  height: calc(var(--size) + var(--size) / 10);
+  align-items: center;
+  gap: calc(var(--size) / 25);
+}
+
+.tiktok-loader .dot {
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  position: relative;
+}
+
+.tiktok-loader .dot1 {
+  background: #fe2c55;
+  animation: dot1 1s linear infinite;
+}
+
+@keyframes dot1 {
+  0%,
+  5%,
+  95%,
+  100% {
+    width: var(--size);
+    height: var(--size);
+    opacity: 1;
+    transform: translate(0);
+  }
+
+  25% {
+    width: calc(var(--size) + var(--size) / 10);
+    height: calc(var(--size) + var(--size) / 10);
+    transform: translate(calc(var(--size) / 2 + calc(var(--size) / 50)));
+    opacity: 0.5;
+  }
+
+  45% {
+    width: var(--size);
+    height: var(--size);
+    transform: translate(calc(var(--size) + calc(var(--size) / 25)));
+    opacity: 1;
+  }
+
+  55% {
+    width: var(--size);
+    height: var(--size);
+    transform: translate(calc(var(--size) + calc(var(--size) / 25)));
+    opacity: 1;
+  }
+
+  75% {
+    width: calc(var(--size) - calc(var(--size) / 2));
+    height: calc(var(--size) - calc(var(--size) / 2));
+    transform: translate(calc(var(--size) / 2 + calc(var(--size) / 50)));
+    opacity: 0.5;
+    background: rgb(26, 26, 26);
+    z-index: 1;
+  }
+}
+
+.tiktok-loader .dot2 {
+  background: #25f4ee;
+  animation: dot2 1s linear infinite;
+}
+
+@keyframes dot2 {
+  0%,
+  5%,
+  95%,
+  100% {
+    width: var(--size);
+    height: var(--size);
+    opacity: 1;
+    transform: translate(0);
+  }
+
+  25% {
+    width: calc(var(--size) - calc(var(--size) / 2));
+    height: calc(var(--size) - calc(var(--size) / 2));
+    transform: translate(calc(-1 * (var(--size) / 2 + calc(var(--size) / 50))));
+    opacity: 1;
+    background: rgb(26, 26, 26);
+    z-index: 1;
+  }
+
+  45% {
+    width: var(--size);
+    height: var(--size);
+    transform: translate(calc(-1 * (var(--size) + calc(var(--size) / 25))));
+    opacity: 1;
+  }
+
+  55% {
+    width: var(--size);
+    height: var(--size);
+    transform: translate(calc(-1 * (var(--size) + calc(var(--size) / 25))));
+    opacity: 1;
+  }
+
+  75% {
+    width: calc(var(--size) + var(--size) / 10);
+    height: calc(var(--size) + var(--size) / 10);
+    transform: translate(calc(-1 * (var(--size) / 2 + calc(var(--size) / 50))));
+    opacity: 0.5;
+  }
+}

@@ -16,4 +16,12 @@ $colors: (
   .btn-#{$colorName} {
     color: $colorValue;
   }
+
+  .btn-bg-#{$colorName} {
+    background: $colorValue;
+  }
+
+  .text-#{$colorName} {
+    color: $colorValue;
+  }
 }

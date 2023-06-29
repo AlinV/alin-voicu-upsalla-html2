@@ -8,7 +8,23 @@
   color: red;
 }
 
+.btn-bg-main {
+  background: red;
+}
+
+.text-main {
+  color: red;
+}
+
 .btn-primary {
+  color: blue;
+}
+
+.btn-bg-primary {
+  background: blue;
+}
+
+.text-primary {
   color: blue;
 }
 
@@ -16,11 +32,35 @@
   color: green;
 }
 
+.btn-bg-secondary {
+  background: green;
+}
+
+.text-secondary {
+  color: green;
+}
+
 .btn-tertiary {
   color: yellow;
 }
 
+.btn-bg-tertiary {
+  background: yellow;
+}
+
+.text-tertiary {
+  color: yellow;
+}
+
 .btn-neutral {
+  color: gray;
+}
+
+.btn-bg-neutral {
+  background: gray;
+}
+
+.text-neutral {
   color: gray;
 }
 
