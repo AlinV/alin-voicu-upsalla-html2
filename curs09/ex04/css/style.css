@@ -42,6 +42,15 @@
 }
 /* please do not modify this code */
 
+.flex-container-01 {
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.flex-container-01 .flex-item:nth-child(4) {
+  align-self: center;
+}
+
 .flex-container-02 {
   justify-content: center;
   align-items: center;
@@ -61,11 +70,30 @@
   align-self: flex-start;
 }
 
+.flex-container-04 {
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.flex-container-04 :last-child {
+  align-self: center;
+}
+
+.flex-container-05 {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-container-05 #flex-item-03 {
+  align-self: stretch;
+  height: auto;
+}
+
 .flex-container-06 {
   justify-content: flex-end;
   align-items: flex-start;
 }
 
-.flex-container-06 .thrid {
+.flex-container-06 .third {
   align-self: flex-end;
 }
